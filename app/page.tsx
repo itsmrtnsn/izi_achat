@@ -1,14 +1,9 @@
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import NavMenu from './store/components/NavMenu';
 
 const HomePage = () => {
 	return (
-		<div className='m-4 space-y-5'>
-			<p className='border p-1 text-ring  bg-card'>
-				this is a test to see if the geist font is applied
-			</p>
-
-			<Input placeholder='input' className='transition-all' />
+		<div className='__I-I__'>
+			<NavMenu />
 		</div>
 	);
 };
