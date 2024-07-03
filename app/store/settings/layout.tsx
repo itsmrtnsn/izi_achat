@@ -22,7 +22,7 @@ export default function SettingsLayout({ children }: PropsWithChildren) {
 						Manage your account settings and set theme preferences.
 					</p>
 				</div>
-				<Link href='/' className={cn(buttonVariants(), 'text-xs')}>
+				<Link href='/' className={cn(buttonVariants(), 'text-xs text-white')}>
 					<ArrowBigLeftDash strokeWidth={1} />
 					Back to Store
 				</Link>

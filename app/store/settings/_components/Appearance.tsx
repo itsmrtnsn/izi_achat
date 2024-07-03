@@ -26,11 +26,11 @@ const Appearance = () => {
 							<div className='h-4 w-4 rounded-full bg-[#ecedef]' />
 							<div className='h-2 w-[200px] rounded-lg bg-[#ecedef]' />
 						</div>
-						<div className='flex items-center space-x-2 rounded-md bg-white p-2 shadow-sm'>
+						<div className='hidden lg:flex items-center space-x-2 rounded-md bg-white p-2 shadow-sm'>
 							<div className='h-4 w-4 rounded-full bg-[#ecedef]' />
 							<div className='h-2 w-[400px] rounded-lg bg-[#ecedef]' />
 						</div>
-						<div className='flex items-center space-x-2 rounded-md bg-white p-2 shadow-sm'>
+						<div className='hidden lg:flex items-center space-x-2 rounded-md bg-white p-2 shadow-sm'>
 							<div className='h-4 w-4 rounded-full bg-[#ecedef]' />
 							<div className='h-2 w-[400px] rounded-lg bg-[#ecedef]' />
 						</div>
@@ -60,11 +60,11 @@ const Appearance = () => {
 							<div className='h-4 w-4 rounded-full bg-slate-400' />
 							<div className='h-2 w-[200px] rounded-lg bg-slate-400' />
 						</div>
-						<div className='flex items-center space-x-2 rounded-md bg-slate-800 p-2 shadow-sm'>
+						<div className='hidden lg:flex items-center space-x-2 rounded-md bg-slate-800 p-2 shadow-sm'>
 							<div className='h-4 w-4 rounded-full bg-slate-400' />
 							<div className='h-2 w-[400px] rounded-lg bg-slate-400' />
 						</div>
-						<div className='flex items-center space-x-2 rounded-md bg-slate-800 p-2 shadow-sm'>
+						<div className=' hidden lg:flex items-center space-x-2 rounded-md bg-slate-800 p-2 shadow-sm'>
 							<div className='h-4 w-4 rounded-full bg-slate-400' />
 							<div className='h-2 w-[400px] rounded-lg bg-slate-400' />
 						</div>

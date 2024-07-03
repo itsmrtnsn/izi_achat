@@ -1,4 +1,3 @@
-import { link } from 'fs';
 import Image from 'next/image';
 
 const FollowUs = () => {
@@ -29,7 +28,7 @@ const FollowUs = () => {
 	return (
 		<div className='flex gap-3'>
 			{socials.map((social) => (
-				<a key={social.id} href={`https://${link}`} target='_blank'>
+				<a key={social.id} href='www.google.com'>
 					<Image src={social.imgUrl} width={35} height={35} alt={social.name} />
 				</a>
 			))}
