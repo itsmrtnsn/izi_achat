@@ -63,7 +63,7 @@ const UserProfile = () => {
 							<span className='ml-2'>Chats</span>
 						</DropdownMenuItem>
 					</Link>
-					<Link href='/profile'>
+					<Link href='/store/settings'>
 						<DropdownMenuItem className='cursor-pointer'>
 							<Cog strokeWidth={0.75} />
 							<span className='ml-2'>Settings</span>

@@ -2,6 +2,7 @@ import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { ThemeProvider } from './providers/ThemeProvider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -19,7 +20,9 @@ export default function RootLayout({
 			<body
 				className={cn(inter.className, 'antialiased h-screen bg-background')}
 			>
-				{children}
+				<ThemeProvider attribute='class' defaultTheme='system'>
+					{children}
+				</ThemeProvider>
 			</body>
 		</html>
 	);
