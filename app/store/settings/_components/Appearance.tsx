@@ -3,11 +3,11 @@
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
-const AppearanceForm = () => {
+const Appearance = () => {
 	const { setTheme } = useTheme();
 
 	return (
-		<div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
+		<div className='grid grid-cols-1 px-3 md:grid-cols-2 gap-7 mx-auto mt-10 max-w-[60rem]'>
 			<div
 				className='border-primary cursor-pointer'
 				onClick={() => setTheme('light')}
@@ -24,14 +24,22 @@ const AppearanceForm = () => {
 						</div>
 						<div className='flex items-center space-x-2 rounded-md bg-white p-2 shadow-sm'>
 							<div className='h-4 w-4 rounded-full bg-[#ecedef]' />
-							<div className='h-2 w-[100px] rounded-lg bg-[#ecedef]' />
+							<div className='h-2 w-[200px] rounded-lg bg-[#ecedef]' />
+						</div>
+						<div className='flex items-center space-x-2 rounded-md bg-white p-2 shadow-sm'>
+							<div className='h-4 w-4 rounded-full bg-[#ecedef]' />
+							<div className='h-2 w-[400px] rounded-lg bg-[#ecedef]' />
+						</div>
+						<div className='flex items-center space-x-2 rounded-md bg-white p-2 shadow-sm'>
+							<div className='h-4 w-4 rounded-full bg-[#ecedef]' />
+							<div className='h-2 w-[400px] rounded-lg bg-[#ecedef]' />
 						</div>
 					</div>
 				</div>
-				<span className='w-full p-2 text-center font-black flex gap-2 justify-center mt-3'>
+				<p className='flex justify-center items-center text-xs gap-2 font-medium mt-3 text-muted-foreground'>
 					<Sun strokeWidth={1} />
-					Light
-				</span>
+					<span>Light Mode</span>
+				</p>
 			</div>
 			{/*  */}
 			<div
@@ -50,16 +58,25 @@ const AppearanceForm = () => {
 						</div>
 						<div className='flex items-center space-x-2 rounded-md bg-slate-800 p-2 shadow-sm'>
 							<div className='h-4 w-4 rounded-full bg-slate-400' />
-							<div className='h-2 w-[100px] rounded-lg bg-slate-400' />
+							<div className='h-2 w-[200px] rounded-lg bg-slate-400' />
+						</div>
+						<div className='flex items-center space-x-2 rounded-md bg-slate-800 p-2 shadow-sm'>
+							<div className='h-4 w-4 rounded-full bg-slate-400' />
+							<div className='h-2 w-[400px] rounded-lg bg-slate-400' />
+						</div>
+						<div className='flex items-center space-x-2 rounded-md bg-slate-800 p-2 shadow-sm'>
+							<div className='h-4 w-4 rounded-full bg-slate-400' />
+							<div className='h-2 w-[400px] rounded-lg bg-slate-400' />
 						</div>
 					</div>
 				</div>
-				<span className='w-full p-2 text-center flex gap-2 justify-center mt-3 font-black'>
-					<Moon strokeWidth={1} />
-					Dark
-				</span>
+
+				<p className='flex justify-center items-center text-xs gap-2 font-medium text-muted-foreground mt-3'>
+					<Sun strokeWidth={1} />
+					<span>Dark Mode</span>
+				</p>
 			</div>
 		</div>
 	);
 };
-export default AppearanceForm;
+export default Appearance;

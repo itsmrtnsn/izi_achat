@@ -17,7 +17,7 @@ const DepartmentMenu = () => {
 		<NavigationMenu>
 			<NavigationMenuList>
 				<NavigationMenuItem>
-					<NavigationMenuTrigger className='text-muted-foreground text-sm hover:dark:text-white hover:text-[#3A2A00] transition-colors'>
+					<NavigationMenuTrigger className='text-muted-foreground text-sm hover:dark:text-white hover:text-[#3A2A00] dark:text-white dark:hover:text-zinc-300 transition-colors'>
 						Departments
 					</NavigationMenuTrigger>
 					<NavigationMenuContent>

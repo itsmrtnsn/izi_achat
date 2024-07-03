@@ -18,7 +18,7 @@ const UserProfile = () => {
 				<UserAvatar imgUrl='' />
 			</DropdownMenuTrigger>
 			<DropdownMenuContent className='w-[16.5rem] mr-5 mt-4'>
-				<div className='border rounded-md px-2 py-2 bg-white mb-3'>
+				<div className='border rounded-md px-2 py-2 bg-white dark:bg-_dark mb-3'>
 					<article className='flex items-center gap-1 mb-2'>
 						<UserAvatar imgUrl='' />
 						<div className='pb-'>

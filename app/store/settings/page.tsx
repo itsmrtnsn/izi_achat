@@ -1,4 +1,10 @@
+import SetttingsTabs from './_components/SetttingsTabs';
+
 const SettingsPage = () => {
-	return <div>SettingsPage</div>;
+	return (
+		<div>
+			<SetttingsTabs />
+		</div>
+	);
 };
 export default SettingsPage;
