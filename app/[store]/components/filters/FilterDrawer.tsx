@@ -31,8 +31,8 @@ const FilterDrawer = () => {
 					</p>
 				</Button>
 			</DrawerTrigger>
-			<DrawerContent className='h-[550px] px-4 pb-4'>
-				<ScrollArea className='h-[550px]'>
+			<DrawerContent className='h-[600px]'>
+				<ScrollArea className='h-[600px] px-4 pb-4'>
 					<div className='space-y-10 mt-5'>
 						<GenderFilter />
 						<SizeFilter />
