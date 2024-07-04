@@ -15,6 +15,26 @@ const ColorFilter = () => {
 			hex: '#0000ff',
 		},
 		{
+			id: 2,
+			name: 'blue',
+			hex: '#0000ff',
+		},
+		{
+			id: 2,
+			name: 'blue',
+			hex: '#0000ff',
+		},
+		{
+			id: 2,
+			name: 'blue',
+			hex: '#0000ff',
+		},
+		{
+			id: 2,
+			name: 'blue',
+			hex: '#0000ff',
+		},
+		{
 			id: 3,
 			name: 'green',
 			hex: '#00ff00',
