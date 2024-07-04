@@ -17,10 +17,10 @@ interface Props {
 }
 const PrimaryProductCard = ({ product }: Props) => {
 	return (
-		<div className='p-2 shadow'>
+		<div className='p-2 border'>
 			<ProductImage image_url={product.imageUrl} image_alt={product.name} />
 			<div className='space-y-1.5 mt-2'>
-				<p className='line-clamp-1 text-sm'>{product.name}</p>
+				<p className='line-clamp-1'>{product.name}</p>
 				<ProductReview
 					averageReview={product.averageReveview}
 					totalReviews={product.totalReviews}
