@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const NavBar = () => {
 	return (
-		<nav className='pb-3 px-2 bg-white dark:bg-_dark'>
+		<nav className='pb-3 px-3 bg-white dark:bg-_dark'>
 			<div className='h-14 flex items-center justify-between'>
 				<div className='flex items-center gap-3'>
 					<NavSheet />

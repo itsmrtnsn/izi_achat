@@ -35,7 +35,7 @@ const NavSheet = () => {
 					</ul>
 				</SheetDescription>
 
-				<div className='mt-[7rem] flex flex-col items-center space-y-2'>
+				<div className='mt-[9rem] flex flex-col items-center space-y-2'>
 					<p className='underline text-sm text-muted-foreground'>
 						Follow & Get in touch with us
 					</p>
