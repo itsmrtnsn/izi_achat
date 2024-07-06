@@ -19,7 +19,6 @@ const ProductPrice = ({ currentPrice, previousPrice, currency }: Props) => {
 			</p>
 			{previousPrice > currentPrice && (
 				<p className='text-xs line-through text-zinc-400'>
-					<span className='mr-0.5'>{currency}</span>
 					{previousPrice.toFixed(2)}
 				</p>
 			)}
