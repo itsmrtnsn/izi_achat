@@ -1,10 +1,6 @@
 import { Fragment } from 'react';
 import PrimaryProductCard from '../components/products/PrimaryProductCard';
 
-import PopOver from '../components/filters/PopOver';
-import ColorFilter from '../components/filters/ColorFilter';
-import SizeFilter from '../components/filters/SizeFilter';
-import PriceFilter from '../components/filters/PriceFilter';
 import FilterDrawer from '../components/filters/FilterDrawer';
 import OrderBy from '../components/filters/OrderBy';
 
@@ -17,7 +13,7 @@ const StoreProductPage = () => {
 			currentPrice: 10,
 			previousPrice: 20,
 			totalReviews: 10,
-			averageReveview: 5,
+			averageReveview: 2.5,
 		},
 		{
 			name: 'nike running shoes 2021',
@@ -26,7 +22,7 @@ const StoreProductPage = () => {
 			currentPrice: 10,
 			previousPrice: 20,
 			totalReviews: 10,
-			averageReveview: 5,
+			averageReveview: 4,
 		},
 		{
 			name: 'nike running shoes Best 2021',
@@ -35,7 +31,7 @@ const StoreProductPage = () => {
 			currentPrice: 45,
 			previousPrice: 40,
 			totalReviews: 10,
-			averageReveview: 5,
+			averageReveview: 3,
 		},
 	];
 	return (

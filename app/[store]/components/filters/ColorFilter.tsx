@@ -103,7 +103,7 @@ const ColorFilter = () => {
 	return (
 		<div>
 			<p className='font-medium mb-3'>Colors</p>
-			<ul className='flex gap-3 flex-wrap'>
+			<ul className='flex gap-4 flex-wrap'>
 				{colors.map((color) => (
 					<li
 						key={color.id}

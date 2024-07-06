@@ -4,10 +4,11 @@ import Search from './Search';
 import UserCart from './UserCart';
 import UserProfile from './UserProfile';
 import Image from 'next/image';
+import { Input } from '@/components/ui/input';
 
 const NavBar = () => {
 	return (
-		<nav className='pb-3 px-3 bg-white dark:bg-_dark'>
+		<nav className='pb-3 px-3 bg-primary'>
 			<div className='h-14 flex items-center justify-between'>
 				<div className='flex items-center gap-3'>
 					<NavSheet />
@@ -34,7 +35,8 @@ const NavBar = () => {
 					<UserCart />
 				</div>
 			</div>
-			<Search />
+			{/* <Search /> */}
+			<Input className='bg-white border-0' placeholder='Search Izi Achat' />
 		</nav>
 	);
 };

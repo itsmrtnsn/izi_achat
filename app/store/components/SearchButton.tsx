@@ -11,7 +11,7 @@ const SearchButton = ({ onClick }: Props) => {
 	return (
 		<Button
 			variant='outline'
-			className='shadow-none text-muted-foreground text-xs w-full lg:w-[20rem] tracking-wide font-light justify-between px-3'
+			className='shadow-none text-muted-foreground text-xs w-full lg:w-[20rem] tracking-wide font-light justify-between px-3 border-none'
 			onClick={onClick}
 		>
 			<p className='flex items-center gap-1 tracking-wide'>

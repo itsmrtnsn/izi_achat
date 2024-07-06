@@ -17,7 +17,7 @@ const UserProfile = () => {
 			<DropdownMenuTrigger asChild>
 				<UserAvatar imgUrl='' />
 			</DropdownMenuTrigger>
-			<DropdownMenuContent className='w-[16.5rem] mr-5 mt-4'>
+			<DropdownMenuContent className='w-[16.5rem] mr-2 lg:mr-5 mt-1 lg:mt-4'>
 				<div className='border rounded-md px-2 py-2 bg-white dark:bg-_dark mb-3'>
 					<article className='flex items-center gap-1 mb-2'>
 						<UserAvatar imgUrl='' />
@@ -34,39 +34,39 @@ const UserProfile = () => {
 				<DropdownMenuGroup>
 					<Link href='/profile'>
 						<DropdownMenuItem className='cursor-pointer'>
-							<Package strokeWidth={0.75} />
-							<span className='ml-2'>Orders</span>
+							<Package strokeWidth={0.75} className='text-primary' />
+							<span className='ml-2 text-main'>Orders</span>
 						</DropdownMenuItem>
 					</Link>
 					<Link href='/profile'>
 						<DropdownMenuItem className='cursor-pointer'>
-							<BookHeart strokeWidth={0.75} />
-							<span className='ml-2'>Wish list</span>
+							<BookHeart strokeWidth={0.75} className='text-primary' />
+							<span className='ml-2 text-main'>Wish list</span>
 						</DropdownMenuItem>
 					</Link>
 					<Link href='/profile'>
 						<DropdownMenuItem className='cursor-pointer'>
-							<Wallet strokeWidth={0.75} />
-							<span className='ml-2'>Wallet</span>
+							<Wallet strokeWidth={0.75} className='text-primary' />
+							<span className='ml-2 text-main'>Wallet</span>
 						</DropdownMenuItem>
 					</Link>
 					<DropdownMenuSeparator />
 					<Link href='/profile'>
 						<DropdownMenuItem className='cursor-pointer'>
-							<Warehouse strokeWidth={0.75} />
-							<span className='ml-2'>Create Store</span>
+							<Warehouse strokeWidth={0.75} className='text-primary' />
+							<span className='ml-2 text-main'>Create Store</span>
 						</DropdownMenuItem>
 					</Link>
 					<Link href='/profile'>
 						<DropdownMenuItem className='cursor-pointer'>
-							<Mail strokeWidth={0.75} />
-							<span className='ml-2'>Chats</span>
+							<Mail strokeWidth={0.75} className='text-primary' />
+							<span className='ml-2 text-main'>Messages</span>
 						</DropdownMenuItem>
 					</Link>
 					<Link href='/store/settings'>
 						<DropdownMenuItem className='cursor-pointer'>
-							<Cog strokeWidth={0.75} />
-							<span className='ml-2'>Settings</span>
+							<Cog strokeWidth={0.75} className='text-primary' />
+							<span className='ml-2 text-main'>Settings</span>
 						</DropdownMenuItem>
 					</Link>
 				</DropdownMenuGroup>

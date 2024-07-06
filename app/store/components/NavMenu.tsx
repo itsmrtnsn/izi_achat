@@ -7,10 +7,10 @@ import UserCart from './UserCart';
 import UserProfile from './UserProfile';
 const NavMenu = () => {
 	return (
-		<nav className='h-16 flex items-center justify-between px-5 bg-white dark:bg-_dark'>
+		<nav className='h-16 flex items-center justify-between px-5 bg-primary dark:bg-_dark'>
 			<div className='flex items-center space-x-3'>
-				<Link href='/' className='pb-1.5'>
-					<Image
+				<Link href='/' className='text-white font-black tracking-wide'>
+					{/* <Image
 						src='../assets/logo-white.svg'
 						alt='logo'
 						width={100}
@@ -23,15 +23,16 @@ const NavMenu = () => {
 						width={100}
 						height={100}
 						className='hidden dark:block'
-					/>
+					/> */}
+					Izi Achat
 				</Link>
 				<div className='flex items-center space-x-0.5'>
 					<DepartmentMenu />
-					<ul className='flex items-center gap-5'>
+					<ul className='flex items-center gap-6'>
 						{navLinks.map(({ id, label, href }) => (
 							<li
 								key={id}
-								className='text-muted-foreground text-sm hover:dark:text-zinc-300 hover:text-[#3A2A00] dark:text-white transition-colors'
+								className='text-main text-sm hover:text-white transition-colors'
 							>
 								<Link href={href}>{label}</Link>
 							</li>
