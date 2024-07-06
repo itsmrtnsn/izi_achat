@@ -1,4 +1,10 @@
-const page = () => {
-	return <div>page</div>;
+import NavBar from './components/NavBar';
+
+const StoreHomePage = () => {
+	return (
+		<div>
+			<NavBar />
+		</div>
+	);
 };
-export default page;
+export default StoreHomePage;

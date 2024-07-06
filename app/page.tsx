@@ -17,7 +17,7 @@ const HomePage = () => {
 
 			{/* content */}
 
-			<Link href='/store/products'>store</Link>
+			<Link href='/store'>store</Link>
 		</section>
 	);
 };
