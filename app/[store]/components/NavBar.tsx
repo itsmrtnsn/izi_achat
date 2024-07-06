@@ -10,10 +10,9 @@ import NavSheet from './NavSheet';
 
 const NavBar = () => {
 	return (
-		<nav className=' p-3.5 space-y-3.5'>
+		<nav className='space-y-3.5 mt-3'>
 			<div className='flex justify-between items-center'>
 				<div className='bold flex items-center gap-3'>
-					{/* <AlignLeft strokeWidth={2} className='text-main' /> */}
 					<NavSheet />
 					<p className='font-bold'>Mini Mart</p>
 				</div>
