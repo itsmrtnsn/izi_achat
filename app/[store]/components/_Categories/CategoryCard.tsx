@@ -13,11 +13,8 @@ const CategoryCard = ({ imgUrl, className, category }: Props) => {
 				aspect_ratio={[3, 2]}
 				image_url={imgUrl}
 				image_alt={category}
-				className='rounded-lg'
+				className='rounded-md'
 			/>
-			<p className='text-xs text-center text-muted-foreground mt-1 line-clamp-1'>
-				{category}
-			</p>
 		</div>
 	);
 };

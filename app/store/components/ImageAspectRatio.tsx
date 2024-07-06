@@ -12,24 +12,20 @@ interface Props {
 }
 
 const ImageAspectRatio = ({
-	// width_in_px,
-	// height_in_px,
 	aspect_ratio,
 	image_url,
 	image_alt,
 	className,
 }: Props) => {
 	return (
-		<div>
-			<AspectRatio ratio={aspect_ratio[0] / aspect_ratio[1]}>
-				<Image
-					src={image_url}
-					alt={image_alt}
-					className={cn('object-cover', className)}
-					fill
-				/>
-			</AspectRatio>
-		</div>
+		<AspectRatio ratio={aspect_ratio[0] / aspect_ratio[1]}>
+			<Image
+				src={image_url}
+				alt={image_alt}
+				className={cn('object-cover', className)}
+				fill
+			/>
+		</AspectRatio>
 	);
 };
 export default ImageAspectRatio;

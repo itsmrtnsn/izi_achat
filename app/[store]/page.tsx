@@ -6,7 +6,7 @@ const StoreHomePage = () => {
 	return (
 		<div className='mx-3'>
 			<NavBar />
-			<div className='mt-10 space-y-5'>
+			<div className='mt-10 space-y-10'>
 				<CategoryShowcase />
 				<FlashSaleCard />
 			</div>

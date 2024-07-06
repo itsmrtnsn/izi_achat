@@ -26,21 +26,26 @@ const CategoryShowcase = () => {
 	];
 	return (
 		<section>
-			<div className='flex items-center justify-between mb-3'>
+			<div className='flex items-center justify-between mb-5'>
 				<p className='font-bold text-primary'>Popular Categories</p>
 
-				<p className='text-muted-foreground text-xs flex items-center hover:underline'>
+				<p className='text-muted-foreground text-xs flex items-center underline'>
 					<span> See all categories</span>
 					<span className='ml-1'>
 						<ArrowRight strokeWidth={1} size={15} />
 					</span>
 				</p>
 			</div>
-			<div className='grid grid-cols-2 gap-3'>
+			<div className='grid grid-cols-2 gap-x-2.5 gap-y-3'>
 				{categories.map((category) => (
-					<div key={category.id}>
-						<CategoryCard imgUrl={category.url} category={category.name} />
-					</div>
+					<article key={category.id}>
+						<div className='border p-2 rounded-md'>
+							<CategoryCard imgUrl={category.url} category={category.name} />
+						</div>
+						<p className='text-xs text-center text-muted-foreground font-medium mt-1.5 line-clamp-1'>
+							{category.name}
+						</p>
+					</article>
 				))}
 			</div>
 		</section>

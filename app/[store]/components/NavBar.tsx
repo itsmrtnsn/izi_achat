@@ -23,7 +23,7 @@ const NavBar = () => {
 			</div>
 
 			<div
-				className='border flex items-center justify-between h-10 p-2 cursor-pointer text-muted-foreground'
+				className='border flex items-center justify-between h-10 p-2 cursor-pointer text-muted-foreground rounded-md'
 				aria-disabled
 			>
 				<p className='flex items-center gap-1 text-xs tracking-wide text-muted-foreground'>
@@ -33,22 +33,22 @@ const NavBar = () => {
 				<p className='flex items-center gap-1'>
 					<span>|</span>
 					<span>
-						<AlignCenter strokeWidth={1} size={18} />
+						<AlignCenter strokeWidth={1} size={20} />
 					</span>
 				</p>
 			</div>
-			<div className='flex items-center gap-1'>
-				<MapPin strokeWidth={2} size={18} className='text-primary' />
+			{/* <div className='flex items-center gap-1'>
+				<MapPin strokeWidth={2} size={22} className='text-primary' />
 				<p className='flex items-center gap-1 text-xs line-clamp-1'>
 					<span className='text-muted-foreground line-clamp-1'>
 						Delivered to
-						<span className='text-main ml-1'>
+						<span className='text-black ml-1'>
 							Haiti - Delmas 31 rue Jacques 1er #19 Haiti - Delmas 31 rue
 							Jacques 1er #19
 						</span>
 					</span>
 				</p>
-			</div>
+			</div> */}
 		</nav>
 	);
 };
