@@ -17,10 +17,10 @@ interface Props {
 }
 const PrimaryProductCard = ({ product }: Props) => {
 	return (
-		<div className='p-2 border'>
+		<div className='p-2 border h-fit'>
 			<ProductImage image_url={product.imageUrl} image_alt={product.name} />
 			<div className='space-y-1.5 mt-2'>
-				<p className='line-clamp-1'>{product.name}</p>
+				<p className='line-clamp-2 text-main'>{product.name}</p>
 				<ProductReview
 					averageReview={product.averageReveview}
 					totalReviews={product.totalReviews}
@@ -30,7 +30,7 @@ const PrimaryProductCard = ({ product }: Props) => {
 					previousPrice={product.previousPrice}
 					currency='USD'
 				/>
-				<Button className='w-full rounded-none bg-black'>Add to cart</Button>
+				<Button className='w-full rounded-none bg-main'>Add to cart</Button>
 			</div>
 		</div>
 	);

@@ -1,12 +1,10 @@
+'use client';
+
+import Masonry from 'react-masonry-css';
+import PrimaryProductCard from './PrimaryProductCard';
 import { Fragment } from 'react';
-import PrimaryProductCard from '../components/_Products/PrimaryProductCard';
-
-import FilterDrawer from '../components/_Filters/FilterDrawer';
-import OrderBy from '../components/_Filters/OrderBy';
-import Masonry from 'react-layout-masonry';
-import ProductsGrid from '../components/_Products/ProductsGrid';
-
-const StoreProductPage = () => {
+import style from './ProductGrid.module.css';
+const ProductsGrid = () => {
 	const products = [
 		{
 			name: 'Under Armour Mens Charged Assert 1',
@@ -54,22 +52,24 @@ const StoreProductPage = () => {
 			averageReveview: 2.5,
 		},
 	];
-	return (
-		<section className='m-2'>
-			{/* <div className='flex items-center justify-between'>
-				<FilterDrawer />
-				<OrderBy />
-			</div>
-			<div className='mt-5 grid  grid-cols-2 gap-2.5'>
-				{products.map((product) => (
-					<Fragment key={product.imageUrl}>
-						<PrimaryProductCard product={product} />
-					</Fragment>
-				))}
-			</div> */}
 
-			<ProductsGrid />
-		</section>
+	return (
+		<Masonry
+			className={style.masonryGrid}
+			columnClassName={style.masonryGridColumn}
+			breakpointCols={{
+				default: 6,
+				1100: 4,
+				700: 3,
+				500: 2,
+			}}
+		>
+			{products.map((product) => (
+				<Fragment key={product.imageUrl}>
+					<PrimaryProductCard product={product} />
+				</Fragment>
+			))}
+		</Masonry>
 	);
 };
-export default StoreProductPage;
+export default ProductsGrid;
