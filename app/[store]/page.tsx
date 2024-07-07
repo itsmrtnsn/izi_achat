@@ -7,15 +7,10 @@ import NavBar from './components/NavBar';
 const StoreHomePage = () => {
 	return (
 		<section>
-			<div className='space-y-10 px-3'>
-				<NavBar />
+			<div className='space-y-10'>
 				<CategoryShowcase />
 				<FlashSaleCard />
 				<HomePageProductRecomandation />
-			</div>
-			{/* <div className='mt-10 space-y-10'></div> */}
-			<div className='mt-10'>
-				<Footer />
 			</div>
 		</section>
 	);

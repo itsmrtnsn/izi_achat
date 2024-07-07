@@ -37,7 +37,7 @@ const NavBar = () => {
 					</span>
 				</p>
 			</div>
-			{/* <div className='flex items-center gap-1'>
+			<div className='flex items-center gap-1'>
 				<MapPin strokeWidth={2} size={22} className='text-primary' />
 				<p className='flex items-center gap-1 text-xs line-clamp-1'>
 					<span className='text-muted-foreground line-clamp-1'>
@@ -48,7 +48,7 @@ const NavBar = () => {
 						</span>
 					</span>
 				</p>
-			</div> */}
+			</div>
 		</nav>
 	);
 };

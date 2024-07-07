@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import CategoryCard from './CategoryCard';
+import Link from 'next/link';
 
 const CategoryShowcase = () => {
 	const categories = [
@@ -30,7 +31,7 @@ const CategoryShowcase = () => {
 				<p className='font-bold text-primary'>Popular Categories</p>
 
 				<p className='text-muted-foreground text-xs flex items-center underline'>
-					<span> See all categories</span>
+					<Link href='/store/categories'> View All Categories</Link>
 					<span className='ml-1'>
 						<ArrowRight strokeWidth={1} size={15} />
 					</span>

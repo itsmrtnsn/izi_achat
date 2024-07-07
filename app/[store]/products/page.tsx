@@ -55,7 +55,7 @@ const StoreProductPage = () => {
 		},
 	];
 	return (
-		<section className='m-2'>
+		<section>
 			{/* <div className='flex items-center justify-between'>
 				<FilterDrawer />
 				<OrderBy />

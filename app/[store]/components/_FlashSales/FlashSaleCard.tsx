@@ -1,4 +1,6 @@
-import { Button } from '@/components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 const FlashSaleCard = () => {
 	return (
@@ -9,9 +11,13 @@ const FlashSaleCard = () => {
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore,
 					nobis!
 				</p>
-				<Button className='bg-white text-main bg-primary text-white'>
+
+				<Link
+					href='/store/products'
+					className={cn(buttonVariants(), 'bg-primary text-white')}
+				>
 					Shop Now
-				</Button>
+				</Link>
 			</div>
 
 			<div></div>
